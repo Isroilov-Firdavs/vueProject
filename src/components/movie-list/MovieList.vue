@@ -10,34 +10,10 @@
         components: {
             MovieListItem,
         },
-        data() {
-            return {
-                movies: [
-                    {
-                        moviename: "Hello",
-                        viewers: 122,
-                        favourite: false,
-                        like: true,
-                    },
-                    {
-                        moviename: "Omar",
-                        viewers: 800,
-                        favourite: true,
-                        like: true,
-                    },
-                    {
-                        moviename: "Salom",
-                        viewers: 500,
-                        favourite: false,
-                        like: false,
-                    },
-                    {
-                        moviename: "Privet",
-                        viewers: 600,
-                        favourite: true,
-                        like: true,
-                    },
-                ]
+        props: {
+            movies: {
+                type: Array,
+                required:true,
             }
         }
     }
